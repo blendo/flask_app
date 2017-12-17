@@ -23,6 +23,13 @@ def static_image():
             capture_image()
     return render_template('static_image.html')
     
+@app.route('/get_features', methods = ['POST', 'GET'])
+def static_image():
+    if request.method == 'POST':
+        if request.form['snapshot']:
+            capture_image()
+    return render_template('get_feature.html')
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=1983, debug=True)

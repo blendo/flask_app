@@ -1,0 +1,4 @@
+
+
+<img src="{{ url_for('static', filename='image.jpg') }}">
+<button type="submit" name="snapshot" value="Take Snapshot">
